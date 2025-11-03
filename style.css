@@ -60,3 +60,22 @@ body::before {
     padding-top: 100px;
     min-height: 100vh;
 }
+
+.custom-card-shadow,
+.custom-history-card {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card-shadow-hover:hover .custom-card-shadow,
+.custom-history-card-hover:hover .custom-history-card {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.custom-card-hover:hover img {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
